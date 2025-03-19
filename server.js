@@ -26,9 +26,10 @@ http.createServer(function(req, res) {
     case '':
         serveStaticFile(res, '/public/index.html', 'text/html');
         break;
-    case '/' :
+    case '/index' :
         serveStaticFile(res, '/public/index.html', 'text/html');
         break;
+
     case '/404':
         serveStaticFile(res, '/public/404.html', 'text/html');
         break;
